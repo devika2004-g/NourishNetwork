@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nourish Network | Donate Food</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Nourish Network Logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donor.html" class="active">Donate</a></li>
+                    <li><a href="find_food.html">Find Food</a></li> <!-- Ensure find_food.html exists -->
+                    <li><a href="impact.html">Impact</a></li> <!-- Ensure impact.html exists -->
+                    <li><a href="login.html" class="login">Login</a></li> <!-- Ensure login.html exists -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="donor-form">
+        <div class="container">
+            <h1>Food Donation Form</h1>
+            <p>Fill out the form below to donate surplus food to those in need.</p>
+
+            <form action="submit_donation.php" method="POST">
+                <div class="form-group">
+                    <label for="donor-name">Your Name or Organization:</label>
+                    <input type="text" id="donor-name" name="donor_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="food-type">Type of Food:</label>
+                    <input type="text" id="food-type" name="food_type" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity of Food (e.g., number of servings, weight):</label>
+                    <input type="text" id="quantity" name="quantity" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pickup-location">Pickup Location:</label>
+                    <input type="text" id="pickup-location" name="pickup_location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Information:</label>
+                    <input type="text" id="contact" name="contact" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-info">Additional Information (Optional):</label>
+                    <textarea id="additional-info" name="additional_info" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Donation</button> 
+ 
+
+                <!-- <form action="thank_you.html">
+                    <div class="form-group">
+                        <label for="donor-name">Your Name or Organization:</label>
+                        <input type="text" id="donor-name" name="donor_name" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="food-type">Type of Food:</label>
+                        <input type="text" id="food-type" name="food_type" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="quantity">Quantity of Food (e.g., number of servings, weight):</label>
+                        <input type="text" id="quantity" name="quantity" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="pickup-location">Pickup Location:</label>
+                        <input type="text" id="pickup-location" name="pickup_location" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="contact">Contact Information:</label>
+                        <input type="text" id="contact" name="contact" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="additional-info">Additional Information (Optional):</label>
+                        <textarea id="additional-info" name="additional_info" rows="4"></textarea>
+                    </div>
+                
+                    <button type="submit" class="btn" href="thankyou.html">Submit Donation</button>
+                </form>
+                 -->
+                
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; By Hack Attack 2024 NourishNetwork. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

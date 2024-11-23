@@ -1,0 +1,157 @@
+/* General Body Styles with Background Image */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background-image.jpg') no-repeat center center fixed; /* Add your image URL here */
+    background-size: cover; /* Ensure the background covers the entire page */
+    background-attachment: fixed;
+    background-color: #f9f9f9; /* Fallback color */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #025544; /* Slight transparency to show the background */
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.nav-links a:hover {
+    background-color: #ff6347;
+    border-radius: 4px;
+}
+
+/* Page Header */
+header {
+    background-color: #025544; /* Slight transparency for the header */
+    padding: 40px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Form Section Styles */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency for the section */
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #025544;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Recipient Information Display */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#recipientName, #recipientContact {
+    color:#025544;
+    font-weight: bold;
+}
+
+/* Map Styles */
+#map {
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Adjustments to Make Text More Legible Over Background Image */
+body, section, nav, header {
+    color: #333; /* Ensure that text is readable against the background */
+}
+
+/* Footer styles */
+footer {
+    background-color: #025544;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
